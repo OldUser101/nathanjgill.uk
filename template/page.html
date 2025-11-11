@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>{{ site.title }} {% if meta.title is not none %} | {{ meta.title }} {% endif %}</title>
+{% endblock %}
+
+{% block content %}
+<header>
+    <a href="/test.html">header 1</a>
+    <a href="/test_md.html">header 2</a>
+</header>
+<div id="content">
+    {{ content | safe }}
+</div>
+<footer>
+    <p>
+        Copyright &copy 2025, Nathan Gill<br>
+        Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA 4.0</a>
+    </p>
+</footer>
+{% endblock %}

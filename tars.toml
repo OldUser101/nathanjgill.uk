@@ -1,0 +1,13 @@
+[site]
+title = "Nathan Gill"
+author = "Nathan Gill <nathan.j.gill@outlook.com>"
+description = "Nathan Gill's personal website"
+base_url = "https://nathanjgill.uk/"
+default_template = "page.html"
+
+[build]
+drafts = false
+
+[serve]
+host = "0.0.0.0"
+port = 8080

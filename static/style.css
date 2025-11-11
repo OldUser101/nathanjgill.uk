@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    background: #1e1e2e;
+    color: #cdd6f4;
+    margin: 0 auto;
+    padding: 1em;
+    max-width: min(100%, 80ch);
+}
+
+
+header {
+    font-family: monospace;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #acadc8;
+}
+
+#content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding-top: 1em;
+    border-top: 2px solid #acadc8;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #cba6f7;
+    padding-left: 1ch;
+    padding-right: 1ch;
+}
+
+a:hover,
+a:active {
+    background: #cba6f7;
+    color: #1e1e2e;
+    cursor: pointer;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #acadc8;
+    margin: 2em 0;
+}
+
+/* Markdown-specific */
+
+#content a,
+#content a:link,
+#content a:visited {
+    text-decoration: underline;
+    color: #cdd6f4;
+    padding-left: 0.5ch;
+    padding-right: 0.5ch;
+}
+
+#content a:hover,
+#content a:active {
+    text-decoration: none;
+    background: #cdd6f4;
+    color: #1e1e2e;
+    cursor: pointer;
+}
+
+#content img {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 1em;
+}
+
+#content h1, #content h2, #content h3,
+#content h4, #content h5, #content h6 {
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #89b4fa;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+#content ul,
+#content ol {
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+}
+#content li + li {
+    margin-top: 0.5em;
+}
+
+#content blockquote {
+    margin: 1em 0;
+    padding-left: 1em;
+    border-left: 4px solid #313244;
+    color: #bac2de;
+    font-style: italic;
+}
+
+#content code {
+    font-family: monospace;
+    background-color: #313244;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    color: #f2cdcd;
+}
+
+#content pre {
+    background-color: #313244;
+    padding: 0.75em;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin-bottom: 1em;
+}
+#content pre code {
+    background: transparent;
+    padding: 0;
+    color: #f2cdcd;
+}
+
+#content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+#content th,
+#content td {
+    border: 1px solid #313244;
+    padding: 0.5em;
+    text-align: left;
+}
+#content th {
+    background-color: #313244;
+    color: #cdd6f4;
+}
+
