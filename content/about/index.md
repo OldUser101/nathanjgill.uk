@@ -77,7 +77,7 @@ of the categories above.
     (somehow) haven't read it, then I highly recommend you do.
 
 My GitHub username is [OldUser101](https://github.com/OldUser101) and, as I say
-over there, you can pronounce my name in a few ways:
+over there, you can pronounce my username in a few ways:
 
 - "Old user one-oh-one"
 - "Old user five"
