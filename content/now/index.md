@@ -32,11 +32,6 @@ I'm working on several things at the moment. Most namely:
     thought of "dependency analyser", but that implies something else. I also
     don't really know how useful it will be.
 
-# Academic
-
-- Writing my personal statement for university, and actually making the application.
-- Attempting (and currently failing) to revise for upcoming mock exams.
-
 # Other Things
 
 - Trying to learn to touch type properly, as well as learning the more
