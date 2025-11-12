@@ -11,7 +11,7 @@ You can find me in various places on the Internet, here's a list of them:
 - Website: [nathanjgill.uk](https://nathanjgill.uk), you're already here.
 - GitHub: [@OldUser101](https://github.com/OldUser101)
 - Bluesky: [@nathanjgill.uk](https://bsky.app/profile/nathanjgill.uk)
-- Matrix: @olduser101:matrix.nathanjgill.uk
+- Matrix: @olduser101:matrix.org
 - LinkedIn: [in/nathan-gill-olduser101](https://www.linkedin.com/in/nathan-gill-olduser101)
 - Reddit: [u/___OldUser101](https://reddit.com/u/___OldUser101)
 
