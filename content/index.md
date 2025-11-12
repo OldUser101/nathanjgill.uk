@@ -1,5 +1,4 @@
 ---
-title: Homepage
 ---
 
 This is content!

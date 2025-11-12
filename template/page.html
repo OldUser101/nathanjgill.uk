@@ -1,13 +1,15 @@
 {% extends "base.html" %}
 
 {% block head %}
-<title>{{ site.title }} {% if meta.title is not none %} | {{ meta.title }} {% endif %}</title>
+<title>{% if meta.title is not none %} {{ meta.title }} | {% endif %} {{ site.title }}</title>
 {% endblock %}
 
 {% block content %}
 <header>
-    <a href="/test.html">header 1</a>
-    <a href="/test_md.html">header 2</a>
+    <a href="/index.html">home</a>
+    <a href="/about/index.html">about</a>
+    <a href="/now/index.html">now</a>
+    <a href="/contact/index.html">contact</a>
 </header>
 <div id="content">
     {{ content | safe }}

@@ -24,8 +24,7 @@ header {
 }
 
 #content {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 1rem 1em;
 }
 
 footer {
@@ -92,11 +91,6 @@ hr {
     margin-bottom: 0.5em;
 }
 
-#content ul,
-#content ol {
-    margin-left: 1.5em;
-    margin-bottom: 1em;
-}
 #content li + li {
     margin-top: 0.5em;
 }
