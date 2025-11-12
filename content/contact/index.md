@@ -13,11 +13,9 @@ You can find me in various places on the Internet, here's a list of them:
 - Bluesky: [@nathanjgill.uk](https://bsky.app/profile/nathanjgill.uk)
 - Matrix: @olduser101:matrix.org
 - LinkedIn: [in/nathan-gill-olduser101](https://www.linkedin.com/in/nathan-gill-olduser101)
-- Reddit: [u/___OldUser101](https://reddit.com/u/___OldUser101)
 
 Generally, if you want to have a converstaion, either e-mail or Matrix
-will get a response the quickest. If you try to contact me via Reddit, I will
-almost certainly miss it.
+will get you a response the quickest.
 
 I don't really care which e-mail address you use. Ideally, the second one
 would've been private, but I had already used it for signing Git commits,
