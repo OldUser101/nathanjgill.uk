@@ -38,3 +38,4 @@ I'm working on several things at the moment. Most namely:
     ergonomic Colemak-DH keyboard layout.
 
 - Writing content for this website.
+
