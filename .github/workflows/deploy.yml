@@ -1,4 +1,4 @@
-name: Deploy
+name: Build and Deploy
 
 on:
     push:
@@ -24,3 +24,11 @@ jobs:
 
             - name: Build site
               run: tars build
+
+            - name: Deploy to Cloudflare Pages
+              uses: cloudflare/wrangler-action@v3
+              with:
+                  apiToken: ${{ secrets.CF_API_TOKEN }}
+                  accountId: ${{ secrets.CF_ACCOUNT_ID }}
+                  command: pages deploy "build" --project-name=${{ secrets.CF_PROJECT_NAME }}
+                  gitHubToken: ${{ secrets.GITHUB_TOKEN }}
