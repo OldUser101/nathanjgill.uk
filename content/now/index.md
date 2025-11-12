@@ -21,10 +21,25 @@ I'm working on several things at the moment. Most namely:
     implementing plugins, which should make it more extensible, with things
     like (hopefully) RSS for blog posts, and automatic sitemap generation.
 
+- Building parts of [Tetra Linux](https://github.com/tetra-linux), most
+    importantly, the package manager. It's mainly written in shell script,
+    but needs to do some rather complex things. The hardest part is dealing
+    with the limitations of the POSIX shell, as it can't be specific to
+    `bash`, `zsh`, etc.
+
 - My A-level computer science NEA project. I don't really know if there's a
     name for it, but a tool that tracks "dependencies" between source files? I
     thought of "dependency analyser", but that implies something else. I also
     don't really know how useful it will be.
 
+# Academic
 
+- Writing my personal statement for university, and actually making the application.
+- Attempting (and currently failing) to revise for upcoming mock exams.
 
+# Other Things
+
+- Trying to learn to touch type properly, as well as learning the more
+    ergonomic Colemak-DH keyboard layout.
+
+- Writing content for this website.

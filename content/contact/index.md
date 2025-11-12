@@ -11,7 +11,13 @@ You can find me in various places on the Internet, here's a list of them:
 - Website: [nathanjgill.uk](https://nathanjgill.uk), you're already here.
 - GitHub: [@OldUser101](https://github.com/OldUser101)
 - Bluesky: [@nathanjgill.uk](https://bsky.app/profile/nathanjgill.uk)
+- Matrix: @olduser101:matrix.nathanjgill.uk
 - LinkedIn: [in/nathan-gill-olduser101](https://www.linkedin.com/in/nathan-gill-olduser101)
+- Reddit: [u/___OldUser101](https://reddit.com/u/___OldUser101)
+
+Generally, if you want to have a converstaion, either e-mail or Matrix
+will get a response the quickest. If you try to contact me via Reddit, I will
+almost certainly miss it.
 
 I don't really care which e-mail address you use. Ideally, the second one
 would've been private, but I had already used it for signing Git commits,
@@ -22,3 +28,24 @@ variation of it, sometimes with underscores. It's likely it will have my
 blue gradient avatar too, which is the favicon for this page, and shown below.
 
 ![Profile Image](/static/avatar.jpg "My Profile Image")
+
+---
+
+# Social Media
+
+I don't really produce content for social media, mainly because I can't be
+bothered, and don't really see the point. I also don't want some random
+Internet guy knowing my entire life story, even if I've forgotten parts
+myself.
+
+Typically, I also don't feel like *being* that random Internet
+guy who knows someone's entire life story, so it's rare to find me using
+such platforms at all.
+
+In general, I only use social media services that are centered around
+private chats. Even then, I don't use them a great deal.
+Bluesky is an exception to this, I have an account, but I rarely
+post any real content.
+
+Don't bother asking me for social media profiles outside the ones listed above.
+The liklihood is, they don't exist.
