@@ -14,7 +14,7 @@ but I enjoy a mix of stuff. I'm a contributor to various open-source projects,
 and have a few of my own. Here's a couple of those:
 
 - [tlockr](https://github.com/OldUser101/tlockr), a (experimental) customisable
-    screen locker for wlroots compositors. The main idea is that is uses user
+    screen locker for wlroots compositors. The main idea is that t uses user
     defined QML to render any password prompt.
 
 - [nlock](https://github.com/OldUser101/nlock), a stable alternative to tlockr
@@ -65,13 +65,14 @@ Given the name, this section is other stuff that doesn't fit nicely with any
 of the categories above.
 
 - I enjoy modding Apple iPods, I've currently got a 6th-gen Classic with a 128 GB
-    mSATA drive, hoping to upgrade to SD at some point, and also a 1st-gen
+    mSATA SSD, hoping to upgrade to SD at some point, and also a 1st-gen
     Mini, with a 32 GB CF card, running [Rockbox](https://www.rockbox.org/).
 
 - My favourite computer mouse is the Microsoft IntelliMouse Explorer 3.0.
 
 - My favourite laptop is the HP EliteBook 8460p, it's probably the most reliable
-    and repairable hardware I've ever used. I don't use it a great deal however.
+    and repairable hardware I've ever used. I don't use it a great deal however,
+    mainly due to its age.
 
 - My favourite book series is easily Hitchhiker's Guide to the Galaxy. If you
     (somehow) haven't read it, then I highly recommend you do.
