@@ -4,7 +4,7 @@
 <title>{% if meta.title is not none %} {{ meta.title }} | {% endif %} {{ site.title }}</title>
 {% endblock %}
 
-{% block content %}
+{% block page %}
 <header>
     <a href="/index.html">home</a>
     <a href="/about/index.html">about</a>
@@ -13,12 +13,16 @@
     <a href="/contact/index.html">contact</a>
 </header>
 <div id="content">
-    {{ content | safe }}
+    {% if meta.template == "page.html" %}
+        {{ content | safe }}
+    {% endif %}
+
+    {% block content %}{% endblock %}
 </div>
 <footer>
     <p>
         Copyright &copy 2025, Nathan Gill<br>
-        Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA 4.0</a>
+        Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
     </p>
     <a href="http://www.catb.org/~esr/hacker-emblem" style="all: unset;cursor: pointer;">
         <img src="/static/glider.svg" width="50" height="50" alt="hacker emblem">
