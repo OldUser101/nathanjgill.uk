@@ -1,4 +1,3 @@
 ---
+template: home.html
 ---
-
-Nothing to see here yet!
