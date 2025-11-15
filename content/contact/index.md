@@ -14,6 +14,8 @@ You can find me in various places on the Internet, here's a list of them:
 - Matrix: @olduser101:matrix.org
 - LinkedIn: [in/nathan-gill-olduser101](https://www.linkedin.com/in/nathan-gill-olduser101)
 
+A vCard with all of these is available [here](/static/nathan-gill-vcard.vcf).
+
 Generally, if you want to have a converstaion, either e-mail or Matrix
 will get you a response the quickest.
 
