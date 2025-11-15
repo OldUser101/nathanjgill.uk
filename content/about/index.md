@@ -4,7 +4,7 @@ title: About
 
 # About Me
 
-I'm a college student in the UK, studying computer science, mathematics, and
+I'm a student in the UK, studying computer science, mathematics, and
 physics. Though that's probably not the part you care about.
 
 # Programming
