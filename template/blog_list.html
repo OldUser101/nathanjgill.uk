@@ -3,7 +3,10 @@
 {% block content %}
 <ul>
     {% for page in pages|selectattr("meta.type", "equalto", "blog")|sort(attribute="meta.date", reverse=true) %}
-            <li><a href="/{{ page.path }}">{{ page.meta.title }}</a> - <em>{{ page.meta.date }}</em></li>
+        <li>
+            <a href="/{{ page.path }}">{{ page.meta.title }}</a> - <em>{{ page.meta.date }}</em>
+            <p style="margin-top: 0; margin-bottom: 0; margin-left: 1em; font-size: 16px;">{{ page.meta.summary }}</p>
+        </li>
     {% endfor %}
 </ul>
 {% endblock %}
