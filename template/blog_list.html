@@ -2,6 +2,8 @@
 
 {% block content %}
 <ul>
+    {{ content | safe }}
+    <hr>
     {% for page in pages|selectattr("meta.type", "equalto", "blog")|sort(attribute="meta.date", reverse=true) %}
         <li>
             <a href="/{{ page.path }}">{{ page.meta.title }}</a> - <em>{{ page.meta.date }}</em>

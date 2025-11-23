@@ -6,7 +6,8 @@ base_url = "https://nathanjgill.uk/"
 default_template = "page.html"
 
 [build]
-drafts = false
+include_drafts = false
+static_prefix = ""
 
 [serve]
 host = "0.0.0.0"
