@@ -7,6 +7,8 @@ title: About
 I'm a student in the UK, studying computer science, mathematics, and
 physics. Though that's probably not the part you care about.
 
+Take a look at my [now page](/now/index.html) for what I'm doing now.
+
 # Programming
 
 I'm pretty interested in programming, particuarly in systems level areas,
@@ -28,23 +30,9 @@ and have a few of my own. Here's a couple of those:
 My favourite programming language is C, but again, I quite enjoy writing Rust,
 C++, and (somewhat suprisingly) Python too.
 
-# Operating System, Software Packages
+# Software
 
-I'm (naturally) a Linux user, but I'm impartial to BSD as well. I'm currently
-using [Void Linux](https://voidlinux.org), mainly for its stable
-rolling-release nature, but also the simplicity. The Void package repository
-is also quite easy to contribute to, so most software is available, at least
-in my case. In the rare case where I can't find something, I normally resort
-to using [Nix](https://nixos.org/) instead, which works suprisingly well.
-
-Other things I use, and highly recommend:
-
-- [Kakoune](https://kakoune.org) for code editing, pairing quite nicely with
-[sidetree](https://github.com/topisani/sidetree)
-
-- [zsh](https://www.zsh.org) as my primary shell
-- [Sway](https://swaywm.org/) window manager
-- [kitty](https://sw.kovidgoyal.net/kitty/) terminal emulator
+Check out my [uses](/uses/index.html) page for this.
 
 # Systemetric
 
