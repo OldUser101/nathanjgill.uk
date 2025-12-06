@@ -1,0 +1,11 @@
+
+{% extends "page.html" %}
+
+{% block content %}
+<h1>{{ meta.title }}</h1>
+<p><strong>{{ meta.summary }}</strong></p>
+<p>Author: <em>{{ meta.author }}</em></p>
+<p>Date Published: <em>{{ meta.date }}</em></p>
+<hr>
+{{ content | safe }}
+{% endblock %}
