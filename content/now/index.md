@@ -3,10 +3,6 @@ title: Now
 date: 2025-11-28
 ---
 
-If you don't know what this page is, see [nownownow.com](https://nownownow.com/about)
-
----
-
 # Programming
 
 I'm working on several things at the moment. Most namely:
