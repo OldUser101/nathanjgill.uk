@@ -16,8 +16,8 @@ You can find me in various places on the Internet, here's a list of them:
 
 A vCard with all of these is available [here](/static/nathan-gill-vcard.vcf).
 
-Generally, if you want to have a converstaion, either e-mail or Matrix
-will get you a response the quickest.
+Generally, if you want to have a converstaion, e-mail will probably get you a
+response the quickest.
 
 I don't really care which e-mail address you use. Ideally, the second one
 would've been private, but I had already used it for signing Git commits,
