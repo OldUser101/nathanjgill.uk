@@ -29,23 +29,3 @@ blue gradient avatar too, which is the favicon for this page, and shown below.
 
 ![Profile Image](/static/avatar.jpg "My Profile Image")
 
----
-
-# Social Media
-
-I don't really produce content for social media, mainly because I can't be
-bothered, and don't really see the point. I also don't want some random
-Internet guy knowing my entire life story, even if I've forgotten parts
-myself.
-
-Typically, I also don't feel like *being* that random Internet
-guy who knows someone's entire life story, so it's rare to find me using
-such platforms at all.
-
-In general, I only use social media services that are centered around
-private chats. Even then, I don't use them a great deal.
-Bluesky is an exception to this, I have an account, but I rarely
-post any real content.
-
-Don't bother asking me for social media profiles outside the ones listed above.
-The liklihood is, they don't exist.
