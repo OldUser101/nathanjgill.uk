@@ -12,26 +12,18 @@ jobs:
     build-deploy:
         runs-on: ubuntu-latest
         steps:
-            - name: Checkout code
-              uses: actions/checkout@v3
+            - uses: actions/checkout@v4
 
-            - name: Install Rust
-              uses: actions-rs/toolchain@v1
-              with:
-                  toolchain: stable
-                  profile: minimal
-                  override: true
-
-            - name: Install Tars
-              run: cargo install tars-bin
+            - name: Install Nix
+              uses: cachix/install-nix-action@v26
 
             - name: Build site
-              run: tars build
+              run: nix build
 
             - name: Deploy to Cloudflare Pages
               uses: cloudflare/wrangler-action@v3
               with:
                   apiToken: ${{ secrets.CF_API_TOKEN }}
                   accountId: ${{ secrets.CF_ACCOUNT_ID }}
-                  command: pages deploy "build" --project-name=nathanjgill --branch=${{ github.head_ref }} --commit-dirty=true
+                  command: pages deploy "result" --project-name=nathanjgill --branch=${{ github.head_ref }} --commit-dirty=true
                   gitHubToken: ${{ secrets.GITHUB_TOKEN }}
