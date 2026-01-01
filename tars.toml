@@ -8,7 +8,13 @@ default_template = "page.html"
 [build]
 include_drafts = false
 static_prefix = ""
+plugin_dir = "plugins"
 
 [serve]
 host = "0.0.0.0"
 port = 8080
+
+[[plugin]]
+name = "rss_generator.py"
+hook = "post"
+hash = "365ad381066612cc1a606811077a4827b2f60e995d5fbed3888f0d7464aecc96"
