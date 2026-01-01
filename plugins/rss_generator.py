@@ -16,9 +16,7 @@ from datetime import datetime, time as dt_time, timezone
 
 BUILD_DIR = Path("build")
 RSS_FILE = Path("static/rss.xml")
-ATOM_FILE = Path("static/atom.xml")
 RSS_OUT = BUILD_DIR / RSS_FILE
-ATOM_OUT = BUILD_DIR / ATOM_FILE
 
 CONTENT_DIR = Path("content")
 POST_DIR = Path("posts")
