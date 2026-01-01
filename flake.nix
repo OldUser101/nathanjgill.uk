@@ -25,14 +25,25 @@
 
           nativeBuildInputs = [
             tars.packages.${pkgs.stdenv.hostPlatform.system}.default
+            pkgs.python313
+            pkgs.python313Packages.python-frontmatter
+            pkgs.tree
           ];
 
           buildPhase = ''
-            tars build
+            # Verify plugins before patching
+            tars plugin verify
+
+            patchShebangs ./plugins/*
+
+            # Skip plugin verification, shebangs patched
+            # causing verification to fail.
+            tars build --no-verify
           '';
 
           installPhase = ''
             mkdir -p $out
+            tree
             cp -r build/* $out/
           '';
         };
@@ -42,6 +53,8 @@
         default = pkgs.mkShell {
           buildInputs = [
             tars.packages.${pkgs.stdenv.hostPlatform.system}.default
+            pkgs.python313
+            pkgs.python313Packages.python-frontmatter
           ];
         };
       });
