@@ -25,8 +25,8 @@
 
           nativeBuildInputs = [
             tars.packages.${pkgs.stdenv.hostPlatform.system}.default
-            pkgs.python313
-            pkgs.python313Packages.python-frontmatter
+            pkgs.python314
+            pkgs.python314Packages.python-frontmatter
             pkgs.tree
           ];
 
@@ -53,8 +53,8 @@
         default = pkgs.mkShell {
           buildInputs = [
             tars.packages.${pkgs.stdenv.hostPlatform.system}.default
-            pkgs.python313
-            pkgs.python313Packages.python-frontmatter
+            pkgs.python314
+            pkgs.python314Packages.python-frontmatter
           ];
         };
       });
