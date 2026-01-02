@@ -42,7 +42,6 @@
 
           installPhase = ''
             mkdir -p $out
-            tree
             cp -r build/* $out/
           '';
         };
