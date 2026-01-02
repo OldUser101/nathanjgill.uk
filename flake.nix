@@ -26,8 +26,10 @@
           nativeBuildInputs = [
             tars.packages.${pkgs.stdenv.hostPlatform.system}.default
             pkgs.python314
+            pkgs.python314Packages.beautifulsoup4
+            pkgs.python314Packages.catppuccin
             pkgs.python314Packages.python-frontmatter
-            pkgs.tree
+            pkgs.python314Packages.pygments
           ];
 
           buildPhase = ''
@@ -54,7 +56,10 @@
           buildInputs = [
             tars.packages.${pkgs.stdenv.hostPlatform.system}.default
             pkgs.python314
+            pkgs.python314Packages.beautifulsoup4
+            pkgs.python314Packages.catppuccin
             pkgs.python314Packages.python-frontmatter
+            pkgs.python314Packages.pygments
           ];
         };
       });

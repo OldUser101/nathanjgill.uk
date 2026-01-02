@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # Tars RSS feed generator
-# Copyright (C) 2025-6, Nathan Gill
+# Copyright (C) 2025-26, Nathan Gill
 # Licensed under the MIT license
 # See LICENSE_MIT for details
 
@@ -138,8 +138,7 @@ def generate_rss(sources):
     return doc
 
 def main():
-    print("\n=== TARS RSS GENERATOR ===")
-    print("    Made by Nathan Gill   \n")
+    print("\nRunning RSS generator...")
 
     print(f"Source Directory: {RSS_SRC}")
     print(f"RSS XML Output: {RSS_OUT}\n")

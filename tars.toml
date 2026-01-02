@@ -17,4 +17,4 @@ port = 8080
 [[plugin]]
 name = "rss_generator.py"
 hook = "post"
-hash = "16f8a9d357c368868fac5b2258f9ade27f1190ad6fc45361520cacbd0244ade7"
+hash = "abb6fcf5211d5dcb321bff48b4efbc3d02a1235a17de26957f4ead135a16ee7d"
