@@ -1,5 +1,5 @@
 ---
-title: Writing Tiny Code - Hello World
+title: Writing Tiny Code - Part 1
 summary: Write a tiny hello world program in x86-64 assembly
 author: Nathan Gill
 date: 2025-11-16
@@ -172,3 +172,8 @@ long.
 Well I hope that was interesting, for the first post on this site at least.
 In the next post, I'll show you a way to optimise this even further, getting
 us down to under 200 bytes!
+
+---
+
+Part 2 is now available, and can be found [here](../2026/00-writing-tiny-code-pt2.html).
+
