@@ -80,7 +80,7 @@ def generate_rss_items(doc, sources):
             pubDate.appendChild(doc.createTextNode(date))
 
             guid = doc.createElement("guid")
-            guid.setAttribute("isPermaLink", "true")
+            guid.setAttribute("isPermaLink", "false")
             guid.appendChild(doc.createTextNode(l))
 
             item.appendChild(title)
