@@ -137,24 +137,28 @@ def generate_rss(sources):
 
     return doc
 
-print("\n=== TARS RSS GENERATOR ===")
-print("    Made by Nathan Gill   \n")
+def main():
+    print("\n=== TARS RSS GENERATOR ===")
+    print("    Made by Nathan Gill   \n")
 
-print(f"Source Directory: {RSS_SRC}")
-print(f"RSS XML Output: {RSS_OUT}\n")
+    print(f"Source Directory: {RSS_SRC}")
+    print(f"RSS XML Output: {RSS_OUT}\n")
 
-start = time.perf_counter()
+    start = time.perf_counter()
 
-sources = index_posts()
-sources = sort_sources_by_date(sources)
+    sources = index_posts()
+    sources = sort_sources_by_date(sources)
 
-rss = generate_rss(sources)
-xml = rss.toxml(encoding="UTF-8")
+    rss = generate_rss(sources)
+    xml = rss.toxml(encoding="UTF-8")
 
-end = time.perf_counter()
+    end = time.perf_counter()
 
-with open(RSS_OUT, "wb") as f:
-    f.write(xml)
+    with open(RSS_OUT, "wb") as f:
+        f.write(xml)
 
-print(f"\nGenerated {RSS_OUT}")
-print(f"Generated RSS for {len(sources)} pages in {end - start:.4f} seconds")
+    print(f"\nGenerated {RSS_OUT}")
+    print(f"Generated RSS for {len(sources)} pages in {end - start:.4f} seconds")
+
+if __name__ == "__main__":
+    main()
