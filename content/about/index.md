@@ -11,8 +11,8 @@ Take a look at my [now page](/now/index.html) for what I'm doing now.
 
 # Programming
 
-I'm pretty interested in programming, particuarly in systems level areas,
-but I enjoy a mix of stuff. I'm a contributor to various open-source projects,
+I often write code as a hobby, particuarly interested in systems level areas
+but I write a mix of stuff. I'm a contributor to various open-source projects,
 and have a few of my own. Here's a couple of those:
 
 - [tlockr](https://github.com/OldUser101/tlockr), a (experimental) customisable
@@ -27,8 +27,8 @@ and have a few of my own. Here's a couple of those:
     powers this website. It's written in Rust, and uses Jinja (or compatible
     at least) templates.
 
-My favourite programming language is C, but again, I quite enjoy writing Rust,
-C++, and (somewhat suprisingly) Python too.
+My favourite programming language is probably Rust, but I quite enjoy writing
+C, C++, and Python too, depending on the situation.
 
 # Software
 
