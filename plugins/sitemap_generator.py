@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+# Tars XML sitemap generator
+# Copyright (C) 2026 Nathan Gill
+# Licensed under the MIT license
+# See LICENSE_MIT for details
+
 import os
 import time
 from pathlib import Path
