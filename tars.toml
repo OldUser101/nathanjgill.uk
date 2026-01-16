@@ -18,3 +18,8 @@ port = 8080
 name = "rss_generator.py"
 hook = "post"
 hash = "abb6fcf5211d5dcb321bff48b4efbc3d02a1235a17de26957f4ead135a16ee7d"
+
+[[plugin]]
+name = "sitemap_generator.py"
+hook = "post"
+hash = "6d8a246b2edcf0e9973747ac5cbe17af43ca0e9887b7e145ea5b47490672f9a7"
