@@ -15,7 +15,7 @@ from email.utils import format_datetime
 from datetime import datetime, time as dt_time, timezone
 
 BUILD_DIR = Path("build")
-RSS_FILE = Path("static/rss.xml")
+RSS_FILE = Path("rss.xml")
 RSS_OUT = BUILD_DIR / RSS_FILE
 
 CONTENT_DIR = Path("content")
