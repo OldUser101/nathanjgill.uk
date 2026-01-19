@@ -22,4 +22,4 @@ hash = "6b60b88d72590dafa5f91f17d5055f3e261f447de9f77187b9453bbd01605b5a"
 [[plugin]]
 name = "sitemap_generator.py"
 hook = "post"
-hash = "6d8a246b2edcf0e9973747ac5cbe17af43ca0e9887b7e145ea5b47490672f9a7"
+hash = "08b8b997a56349ef22ae0054bc9d35075a36dc1febc9bca6392a021cb369dd8b"
