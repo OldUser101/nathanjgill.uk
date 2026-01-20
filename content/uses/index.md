@@ -14,7 +14,7 @@ using [Void Linux](https://voidlinux.org), mainly for its stable
 rolling-release nature, but also the simplicity. The Void package repository
 is also quite easy to contribute to, so most software is available, at least
 in my case. In the rare case where I can't find something, I normally resort
-to using [Nix](https://nixos.org/) instead, which works suprisingly well.
+to using [Nix](https://nixos.org/) instead, which works surprisingly well.
 
 Other things I use, and highly recommend:
 
