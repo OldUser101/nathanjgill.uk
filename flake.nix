@@ -42,7 +42,7 @@
 
           installPhase = ''
             mkdir -p $out
-            cp -r build/* $out/
+            cp -r build/{*,.*} $out/
           '';
         };
       });
