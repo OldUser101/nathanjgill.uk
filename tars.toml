@@ -13,11 +13,19 @@ plugin_dir = "plugins"
 [serve]
 host = "0.0.0.0"
 port = 8080
+auto_reload = false
 
 [[plugin]]
 name = "rss_generator.py"
 hook = "post"
 hash = "6b60b88d72590dafa5f91f17d5055f3e261f447de9f77187b9453bbd01605b5a"
+build_dir = "build"
+rss_file = "rss.xml"
+content_dir = "content"
+post_dir = "posts"
+title = "Nathan Gill's Blog"
+url = "https://nathanjgill.uk/"
+desc = "Nathan Gill's blog posts on various topics"
 
 [[plugin]]
 name = "sitemap_generator.py"
