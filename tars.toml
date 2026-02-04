@@ -18,7 +18,7 @@ auto_reload = false
 [[plugin]]
 name = "rss_generator.py"
 hook = "post"
-hash = "6b60b88d72590dafa5f91f17d5055f3e261f447de9f77187b9453bbd01605b5a"
+hash = "8cb5dbd677c927e988d0849c672f4aa9bd22a84d11fdff5ed2a6b46545207910"
 build_dir = "build"
 rss_file = "rss.xml"
 content_dir = "content"
@@ -30,7 +30,7 @@ desc = "Nathan Gill's blog posts on various topics"
 [[plugin]]
 name = "sitemap_generator.py"
 hook = "post"
-hash = "08b8b997a56349ef22ae0054bc9d35075a36dc1febc9bca6392a021cb369dd8b"
+hash = "84ee882497d41e14f33141754b6e612968654fb67d52cc78f4dcbd4336a9f5d7"
 build_dir = "build"
 sitemap = "sitemap.xml"
 url = "https://nathanjgill.uk/"
