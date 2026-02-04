@@ -6,16 +6,41 @@
 # See LICENSE_MIT for details
 
 import os
+import sys
 import time
+import tomllib
 from pathlib import Path
 from urllib.parse import urljoin
 from xml.dom import minidom
 
-SITE_URL = "https://nathanjgill.uk"
-BUILD_DIR = Path("build")
-SITEMAP_OUT = BUILD_DIR / Path("sitemap.xml")
-INCL_GLOBS = ["*.html"]
-EXCL_GLOBS = ["404.html"]
+SITE_URL = None
+BUILD_DIR = None
+SITEMAP = None
+INCL_GLOBS = None
+EXCL_GLOBS = None
+
+for arg in sys.argv:
+    try:
+        data = tomllib.loads(arg)
+        key, value = next(iter(data.items()))
+    except ValueError:
+        continue
+
+    if key == "url":
+        SITE_URL = str(value)
+    elif key == "build_dir":
+        BUILD_DIR = Path(value)
+    elif key == "sitemap":
+        SITEMAP = Path(value)
+    elif key == "incl":
+        INCL_GLOBS = list(value)
+    elif key == "excl":
+        EXCL_GLOBS = list(value)
+    else:
+        print(f"unrecognised argument: '{arg}'")
+        sys.exit(1)
+
+SITEMAP_OUT = BUILD_DIR / SITEMAP
 
 def page_to_url(page):
     page = Path(page).relative_to(BUILD_DIR)

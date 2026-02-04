@@ -122,11 +122,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1768838467,
-        "narHash": "sha256-lue0c4CTTZ2gWKV2Py1CRtOr1/tvjCjzxlizCyloXgM=",
+        "lastModified": 1770201653,
+        "narHash": "sha256-fLI30QQHSQ2V0TQFm+FVsDX84sf8pPMJTFchF/r8RKo=",
         "owner": "OldUser101",
         "repo": "tars",
-        "rev": "cf7e6f9481c0bba5ee528389b7a68ad3158d6024",
+        "rev": "aeb581dc844adc75a048026e9b213ceaa041dfd6",
         "type": "github"
       },
       "original": {

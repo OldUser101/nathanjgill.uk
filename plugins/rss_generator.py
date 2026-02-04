@@ -6,7 +6,9 @@
 # See LICENSE_MIT for details
 
 import os
+import sys
 import time
+import tomllib
 import frontmatter
 from pathlib import Path
 from urllib.parse import urljoin
@@ -14,18 +16,43 @@ from xml.dom.minidom import Document
 from email.utils import format_datetime
 from datetime import datetime, time as dt_time, timezone
 
-BUILD_DIR = Path("build")
-RSS_FILE = Path("rss.xml")
+BUILD_DIR = None
+RSS_FILE = None
+
+CONTENT_DIR = None
+POST_DIR = None
+
+SITE_TITLE = ""
+SITE_URL = ""
+SITE_DESC = ""
+
+for arg in sys.argv:
+    try:
+        data = tomllib.loads(arg)
+        key, value = next(iter(data.items()))
+    except ValueError:
+        continue
+
+    if key == "build_dir":
+        BUILD_DIR = Path(value)
+    elif key == "rss_file":
+        RSS_FILE = Path(value)
+    elif key == "content_dir":
+        CONTENT_DIR = Path(value)
+    elif key == "post_dir":
+        POST_DIR = Path(value)
+    elif key == "title":
+        SITE_TITLE = str(value)
+    elif key == "url":
+        SITE_url = str(value)
+    elif key == "desc":
+        SITE_DESC = str(value)
+    else:
+        print(f"unrecognised argument: '{arg}'")
+        sys.exit(1)
+
 RSS_OUT = BUILD_DIR / RSS_FILE
-
-CONTENT_DIR = Path("content")
-POST_DIR = Path("posts")
 RSS_SRC = CONTENT_DIR / POST_DIR
-
-SITE_TITLE = "Nathan Gill's Blog"
-SITE_URL = "https://nathanjgill.uk/"
-SITE_DESC = "Nathan Gill's blog posts on various topics"
-
 BUILD_DATE = datetime.now()
 
 def index_posts():
