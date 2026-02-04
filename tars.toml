@@ -31,3 +31,9 @@ desc = "Nathan Gill's blog posts on various topics"
 name = "sitemap_generator.py"
 hook = "post"
 hash = "08b8b997a56349ef22ae0054bc9d35075a36dc1febc9bca6392a021cb369dd8b"
+build_dir = "build"
+sitemap = "sitemap.xml"
+url = "https://nathanjgill.uk/"
+incl = [ "*.html" ]
+excl = [ "404.html" ]
+
