@@ -1,6 +1,6 @@
 ---
 title: Now
-date: 2026-01-22
+date: 2026-02-14
 ---
 
 # Programming
@@ -16,11 +16,6 @@ I'm working on several things at the moment. Most namely:
     now, sitemap and RSS generation, but the way some of the code is written
     kind of annoys me, probably needs a refactor.
 
-- My A-level computer science NEA project. I don't really know if there's a
-    name for it, but a tool that tracks "dependencies" between source files? I
-    thought of "dependency analyser", but that implies something else. I also
-    don't really know how useful it will be.
-
 # Other Things
 
 - Taking a look a functional languages again, solving stuff over at
@@ -28,6 +23,7 @@ I'm working on several things at the moment. Most namely:
 
 - Writing content for this website (as always).
 
-- Reading [Excession](https://en.wikipedia.org/wiki/Excession), a book by
-    Iain Banks, can highly recommend.
+- Reading [Surface Detail](https://en.wikipedia.org/wiki/Surface_Detail), a book by
+    Iain Banks, like [Excession](https://en.wikipedia.org/wiki/Excession), I can also
+    recommend.
 
