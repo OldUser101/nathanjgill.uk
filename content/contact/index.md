@@ -13,7 +13,8 @@ You can find me in various places on the Internet, here's a list of them:
 - Bluesky: [@nathanjgill.uk](https://bsky.app/profile/nathanjgill.uk)
 - Mastodon: [@olduser101@vmst.io](https://vmst.io/@olduser101)
 - Matrix: @olduser101:matrix.org
-- LinkedIn: [in/nathan-gill-olduser101](https://www.linkedin.com/in/nathan-gill-olduser101)
+- LinkedIn: [in/nathan-gill-olduser101](https://www.linkedin.com/in/nathan-gill-olduser101),
+    don't bother trying though
 
 A vCard with all of these is available [here](/static/nathan-gill-vcard.vcf).
 
