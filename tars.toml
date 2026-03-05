@@ -18,7 +18,7 @@ auto_reload = false
 [[plugin]]
 name = "rss_generator.py"
 hook = "post"
-hash = "8cb5dbd677c927e988d0849c672f4aa9bd22a84d11fdff5ed2a6b46545207910"
+hash = "88961bf763be468339c157aa3bb1bc4182858db7a0aad39165fa5ee75ad7f7ee"
 build_dir = "build"
 rss_file = "rss.xml"
 content_dir = "content"

@@ -44,7 +44,7 @@ for arg in sys.argv:
     elif key == "title":
         SITE_TITLE = str(value)
     elif key == "url":
-        SITE_url = str(value)
+        SITE_URL = str(value)
     elif key == "desc":
         SITE_DESC = str(value)
     else:
