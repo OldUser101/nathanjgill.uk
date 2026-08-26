@@ -27,7 +27,7 @@ you want to be certain.
 
 You can tell if a profile is mine if it has the name "OldUser101", or a
 variation of it, sometimes with underscores. It's likely it will have my
-blue gradient avatar too, which is the favicon for this page, and shown below.
+gradient avatar too, which is the favicon for this page, and shown below.
 
 ![Profile Image](/static/avatar.jpg "My Profile Image")
 
