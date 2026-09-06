@@ -24,10 +24,8 @@ jobs:
                    nix build
                    mkdir -p build
                    cp -r result/* build/
+                   cp -r result/.* build/
                    chmod +w -R build
-
-            - name: Publish blog posts
-              run: ATPROTO_PWD=${{ secrets.ATPROTO_PWD }} nix run .#publish
 
             - name: Deploy to Cloudflare Pages
               uses: cloudflare/wrangler-action@v3

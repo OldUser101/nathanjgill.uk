@@ -1,9 +1,17 @@
-<!DOCTYPE html>
-<!-- Copyright (C) 2025-26, Nathan Gill -->
-<!-- Licensed under CC BY-NC-SA 4.0 -->
-<!-- See https://creativecommons.org/licenses/by-nc-sa/4.0/ for details -->
-<html>
-    <head>
+{
+  lib,
+  head ? "",
+  page ? "",
+}:
+lib.buildPage {
+  name = "base";
+  text = ''
+    <!DOCTYPE html>
+    <!-- Copyright (C) 2025-26, Nathan Gill -->
+    <!-- Licensed under CC BY-NC-SA 4.0 -->
+    <!-- See https://creativecommons.org/licenses/by-nc-sa/4.0/ for details -->
+    <html>
+      <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico"/>
@@ -12,9 +20,11 @@
         <link rel="stylesheet" href="/static/style.css"/>
         <link rel="me" href="https://mastodon.social/@olduser101"/>
         <link rel="me" href="https://sifa.id/p/ngill.net"/>
-        {% block head %}{% endblock %}
-    </head>
-    <body>
-        {% block page %}{% endblock %}
-    </body>
-</html>
+        ${head}
+      </head>
+      <body>
+        ${page}
+      </body>
+    </html>
+  '';
+}

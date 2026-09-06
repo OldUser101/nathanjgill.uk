@@ -1,12 +1,3 @@
----
-title: Writing Wayland screen lockers "for fun"
-summary: Yes, I wrote (or at least tried to write) more than one.
-author: Nathan Gill
-date: 2026-03-05
-template: blog.html
-type: blog
----
-
 **Note:** This blog post does not actually cover how to write a Wayland screen
 locker yourself, just the engineering process of my own implementation. Sorry :(
 

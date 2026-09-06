@@ -1,12 +1,3 @@
----
-title: Writing Tiny Code - Part 2
-summary: Optimize the program from part 1 to produce an even smaller binary
-author: Nathan Gill
-date: 2026-01-02
-template: blog.html
-type: blog
----
-
 This is the second part of a tutorial series, you can find part 1
 [here](../2025/00-writing-tiny-code-pt1.html).
 

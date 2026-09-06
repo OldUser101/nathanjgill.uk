@@ -1,9 +1,3 @@
----
-title: Now
-date: 2026-06-25
-template: now.html
----
-
 # Programming
 
 - Working on parts of Tetra, mainly the init system

@@ -1,12 +1,3 @@
----
-title: Who needs GUIs anyway?
-summary: My frustrations with desktop UI, especially GUI toolkits
-author: Nathan Gill
-date: 2026-02-02
-template: blog.html
-type: blog
----
-
 For the past few months I've found that I only really use two applications.
 One, a web browser (yeah the title's a bit misleading); two, a terminal
 emulator.

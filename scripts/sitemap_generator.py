@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Tars XML sitemap generator
+# XML sitemap generator
 # Copyright (C) 2026 Nathan Gill
 # Licensed under the MIT license
 # See LICENSE_MIT for details
@@ -37,10 +37,7 @@ for arg in sys.argv:
     elif key == "excl":
         EXCL_GLOBS = list(value)
     else:
-        print(f"unrecognised argument: '{arg}'")
         sys.exit(1)
-
-SITEMAP_OUT = BUILD_DIR / SITEMAP
 
 def page_to_url(page):
     page = Path(page).relative_to(BUILD_DIR)
@@ -88,21 +85,12 @@ def generate_sitemap(pages):
     return doc
     
 def main():
-    print("\nRunning sitemap generator...")
-
-    start = time.perf_counter()
-
     pages = find_pages()
     doc = generate_sitemap(pages)
     xml = doc.toxml(encoding="UTF-8")
 
-    end = time.perf_counter()
-
-    with open(SITEMAP_OUT, "wb") as f:
-        f.write(xml)
-        
-    print(f"Generated {SITEMAP_OUT}")
-    print(f"Generated sitemap for {len(pages)} pages in {end - start:.4f} seconds")
+    sys.stdout.buffer.write(xml)
+    sys.stdout.buffer.flush()
 
 if __name__ == "__main__":
     main()

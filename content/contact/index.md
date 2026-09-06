@@ -1,7 +1,3 @@
----
-title: Contact
----
-
 # Contact
 
 You can find me in various places on the Internet, here's a list of them:

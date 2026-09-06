@@ -1,7 +1,3 @@
----
-title: About
----
-
 # About Me
 
 I'm a hobbyist programmer in the UK, particuarly interested in systems

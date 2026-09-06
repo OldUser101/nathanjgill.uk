@@ -1,12 +1,3 @@
----
-title: Writing Tiny Code - Part 1
-summary: Write a tiny hello world program in x86-64 assembly
-author: Nathan Gill
-date: 2025-11-16
-type: blog
-template: blog.html
----
-
 Okay, this is slightly daunting being the first post on this site, but I'll
 give it a go.
 

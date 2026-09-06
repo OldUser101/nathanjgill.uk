@@ -1,12 +1,3 @@
----
-title: MySQL Database Connection Tester
-summary: Write a VB.NET application to test the connection of MySQL databases
-author: Nathan Gill
-date: 2021-03-09
-type: blog
-template: blog.html
----
-
 This tutorial will teach you how to create a VB.NET application to test the
 connection of MySQL databases.
 

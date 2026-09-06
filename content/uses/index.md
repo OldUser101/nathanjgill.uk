@@ -1,7 +1,3 @@
----
-title: Uses
----
-
 # Uses
 
 This is a list of stuff I use, that you might be interested in.
