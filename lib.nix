@@ -35,7 +35,7 @@ let
         c = pkgs.lib.mapAttrsToList (name: page: ''
           echo "building ${name}..."
           mkdir -p "$out/$(dirname '${name}')"
-          cp '${page}' "$out/${name}"
+          cp "${page}" "$out/${name}"
         '') (site.pages or { });
       in
       pkgs.stdenv.mkDerivation {
@@ -44,8 +44,6 @@ let
 
         inherit (site) src;
         nativeBuildInputs = site.nativeBuildInputs or [ ];
-
-        dontUnpack = false;
 
         installPhase = ''
           ${site.preBuild or ""}
