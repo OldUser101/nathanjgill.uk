@@ -18,7 +18,12 @@ let
           nativeBuildInputs = [ pkgs.cmark-gfm ];
         }
         ''
-          cmark-gfm ${path} > $out
+          cmark-gfm \
+            -e footnotes \
+            -e table \
+            -e strikethrough \
+            -e autolink \
+            ${path} > $out
         '';
 
     buildMarkdownText = name: path: builtins.readFile (lib.buildMarkdown name path);
