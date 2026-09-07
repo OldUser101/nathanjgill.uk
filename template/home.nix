@@ -48,7 +48,7 @@ let
 
       <p style="margin-bottom: 0;"><strong>Other Sites</strong></p>
       <div>
-        <a href="https://git.ngill.net/cgit">Personal Git Server</a>
+        <a href="https://git.ngill.net">Personal Git Server</a>
       </div>
       <div>
         <a href="https://asmsim.ngill.net">AQA Assembly Language Simulator</a>
