@@ -24,7 +24,6 @@ jobs:
                    nix build
                    mkdir -p build
                    cp -r result/* build/
-                   cp -r result/.* build/
                    chmod +w -R build
 
             - name: Deploy to Cloudflare Pages
