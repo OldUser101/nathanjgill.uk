@@ -60,7 +60,7 @@ a:active {
 
 hr {
   border: none;
-  border-top: 1px solid #acadc8;
+  border-top: 2px solid #acadc8;
   margin: 2em 0;
 }
 
@@ -99,7 +99,7 @@ hr {
 #content h6 {
   font-weight: 600;
   font-size: 1.2em;
-  color: #89b4fa;
+  color: #cba6f7;
   margin-top: 1.5em;
   margin-bottom: 0.5em;
 }
@@ -118,40 +118,43 @@ hr {
 
 #content code {
   font-family: monospace;
-  background-color: #313244;
+  background-color: #11111b;
   padding: 0.2em 0.4em;
-  border-radius: 3px;
-  color: #f2cdcd;
+  color: #bac2de;
 }
 
 #content pre {
-  background-color: #313244;
+  background-color: #11111b;
   padding: 0.75em;
-  border-radius: 4px;
+  border: 2px solid #cba6f7;
   overflow-x: auto;
   margin-bottom: 1em;
 }
 #content pre code {
   background: transparent;
   padding: 0;
-  color: #f2cdcd;
+  color: #bac2de;
 }
 
 #content table {
   width: 100%;
+  border: 2px solid #313244;
   border-collapse: collapse;
   margin-bottom: 1em;
 }
 #content th,
 #content td {
-  border: 1px solid #313244;
   padding: 0.5em;
   text-align: left;
 }
 #content th {
   background-color: #313244;
-  color: #cdd6f4;
+  color: #cba6f7;
 }
+#content tr:nth-child(even) {
+    background-color: #181825;
+}
+
 
 /* Badge related rules */
 
@@ -188,7 +191,7 @@ hr {
   max-width: 90%;
   text-align: left;
   padding: 0 1em;
-  border: 1px solid #acadc8;
+  border: 2px solid #acadc8;
 }
 
 #playing-status {

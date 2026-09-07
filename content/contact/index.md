@@ -44,14 +44,14 @@ personal server and you'd like to contribute, e-mail me.
 |Project|Personal server|GitHub|Tangled|
 |-|-|-|-|
 |[nlock](https://github.com/OldUser101/nlock)|✓|✓ (canonical)|✓|
-|[tars](https://git.ngill.net/cgit/tars.git)|✓ (canonical)|✓|✓|
-|[lic](https://git.ngill.net/cgit/lic.git)|✓ (canonical)|✓|✓|
-|[dotfiles](https://git.ngill.net/cgit/dotfiles.git)|✓ (canonical)|✓|✓|
-|[onyx](https://git.ngill.net/cgit/onyx.git)|✓ (canonical)|✓|✓|
-|[nls](https://git.ngill.net/cgit/nls.git)|✓ (canonical)|✓|✓|
-|[personal-site](https://git.ngill.net/cgit/personal-site.git)|✓ (canonical)|✓|✗|
-|[aqasm-sim](https://git.ngill.net/cgit/aqasm-sim.git)|✓ (canonical)|✓|✗|
-|[mastermind](https://git.ngill.net/cgit/mastermind.git)|✓ (canonical)|✓|✗|
+|[tars](https://git.ngill.net/tars.git)|✓ (canonical)|✓|✓|
+|[lic](https://git.ngill.net/lic.git)|✓ (canonical)|✓|✓|
+|[dotfiles](https://git.ngill.net/dotfiles.git)|✓ (canonical)|✓|✓|
+|[onyx](https://git.ngill.net/onyx.git)|✓ (canonical)|✓|✓|
+|[nls](https://git.ngill.net/nls.git)|✓ (canonical)|✓|✓|
+|[personal-site](https://git.ngill.net/personal-site.git)|✓ (canonical)|✓|✗|
+|[aqasm-sim](https://git.ngill.net/aqasm-sim.git)|✓ (canonical)|✓|✗|
+|[mastermind](https://git.ngill.net/mastermind.git)|✓ (canonical)|✓|✗|
 |..others|✓ (canonical)|✗|✗|
 
 There is a [GitHub organisation](https://github.com/tetra-linux) for Tetra
