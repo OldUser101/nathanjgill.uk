@@ -8,7 +8,7 @@ cfg:
 let
   postIndex = builtins.map (post: ''
     <li>
-      <a href="${post.finalPath}">${post.title}</a> - <em>${post.date}</em>
+      <a href="/${post.finalPath}">${post.title}</a> - <em>${post.date}</em>
       <p style="margin-top: 0; margin-bottom: 0; margin-left: 1em; font-size: 16px;">${post.summary}</p>
     </li>
   '') posts;
