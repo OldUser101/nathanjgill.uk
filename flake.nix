@@ -30,6 +30,7 @@
           nativeBuildInputs = [
             pkgs.python314
             pkgs.prettier
+            pkgs.busybox
           ];
         };
       });
