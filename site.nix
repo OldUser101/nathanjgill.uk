@@ -103,6 +103,9 @@ let
 
     nativeBuildInputs = with pkgs; [
       python314
+      python3Packages.beautifulsoup4
+      python3Packages.pygments
+      python3Packages.catppuccin
     ];
 
     pages = {
@@ -127,8 +130,8 @@ let
       patchShebangs ./scripts/*
 
       echo "copying static..."
-      ${pkgs.tree}/bin/tree -al
       cp -r ./static/* $out/
+      chmod +w -R $out
 
       echo "generating rss xml..."
       ./scripts/rss_generator.py ${rssConfig} > $out/rss.xml
@@ -139,6 +142,12 @@ let
         excl="[\"404/html\"]" \
         url=\"${cfg.url}\" \
         build_dir=\"$out\" > $out/sitemap.xml
+
+      echo "highlighting..."
+      ./scripts/highlight.py \
+        incl="[\"*.html\"]" \
+        excl="[]" \
+        build_dir=\"$out\"
     '';
   };
 in

@@ -28,9 +28,13 @@
       devShells = forAllSystems (pkgs: {
         default = pkgs.mkShell {
           nativeBuildInputs = [
-            pkgs.python314
             pkgs.prettier
             pkgs.busybox
+
+            pkgs.python314
+            pkgs.python3Packages.beautifulsoup4
+            pkgs.python3Packages.pygments
+            pkgs.python3Packages.catppuccin
           ];
         };
       });
