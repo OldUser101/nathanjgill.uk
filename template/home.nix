@@ -3,10 +3,6 @@ cfg:
   lib,
 }:
 let
-  head = ''
-    <script src="/static/tealfm.js"></script>
-  '';
-
   content = ''
     <div style="text-align: center; margin-top: 1em;">
       <img src="/static/avatar.jpg" width="250" height="250" alt="My Profile Picture">
@@ -41,11 +37,6 @@ let
         </div>
       </div>
 
-      <div id="playing-box">
-        <p style="font-weight: bold;">Listening to:</p>
-        <div id="playing-status"></div>
-      </div>
-
       <p style="margin-bottom: 0;"><strong>Other Sites</strong></p>
       <div>
         <a href="https://git.ngill.net">Personal Git Server</a>
@@ -65,6 +56,6 @@ in
 lib.buildPage {
   name = "home";
   text = lib.buildTemplateText (import ./page.nix cfg) {
-    inherit content head;
+    inherit content;
   };
 }
