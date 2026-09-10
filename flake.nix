@@ -23,6 +23,18 @@
             lib = import ./lib.nix { inherit pkgs; };
           in
           lib.buildSite site;
+
+        guestbook = pkgs.stdenv.mkDerivation {
+          pname = "guestbook";
+          version = "0.1";
+
+          src = ./server;
+
+          installPhase = ''
+            mkdir -p $out
+            cp ./guestbook.php $out/
+          '';
+        };
       });
 
       devShells = forAllSystems (pkgs: {
@@ -30,6 +42,8 @@
           nativeBuildInputs = [
             pkgs.prettier
             pkgs.busybox
+
+            pkgs.php
 
             pkgs.python314
             pkgs.python3Packages.beautifulsoup4
