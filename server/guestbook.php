@@ -72,10 +72,12 @@ if ($method === "POST" && $path === "/") {
     if (!array_key_exists("name", $message) ||
         !array_key_exists("message", $message) ||
         !is_string($message["name"]) ||
-        !is_string($message["message"])) {
+        !is_string($message["message"]) ||
+        strlen($message["name"]) > 100 ||
+        strlen($message["message"]) > 1000) {
 
         http_response_code(400);
-        echo json_encode(["error" => "invalid json"]);
+        echo json_encode(["error" => "invalid content"]);
         exit;
     }
 
