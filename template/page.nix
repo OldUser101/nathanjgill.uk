@@ -24,6 +24,7 @@ let
       <a href="/index.html">home</a>
       <a href="/about/index.html">about</a>
       <a href="/blog/index.html">blog</a>
+      <a href="/guestbook/index.html">guestbook</a>
       <a href="/contact/index.html">contact</a>
     </header>
     <div id="content">
@@ -35,6 +36,7 @@ let
       <a href="/blog/index.html">blog</a>
       <a href="/now/index.html">now</a>
       <a href="/uses/index.html">uses</a>
+      <a href="/guestbook/index.html">guestbook</a>
       <a href="/contact/index.html">contact</a>
       <a href="/rss.xml">rss</a>
 

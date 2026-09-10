@@ -15,6 +15,7 @@ let
     now = import ./template/now.nix cfg;
     blog = import ./template/blog.nix cfg;
     blog_list = import ./template/blog_list.nix cfg;
+    guestbook = import ./template/guestbook.nix cfg;
   };
 
   buildMarkdownPage =
@@ -117,6 +118,7 @@ let
         prefix = lib.buildMarkdownText "blog-prefix" ./content/blog/index.md;
       };
       "contact/index.html" = buildMarkdownPage ./content/contact/index.md { title = "Contact"; };
+      "guestbook/index.html" = lib.buildTemplate templates.guestbook { };
       "now/index.html" = lib.buildTemplate templates.now {
         path = ./content/now/index.md;
         date = "2026-06-25";
