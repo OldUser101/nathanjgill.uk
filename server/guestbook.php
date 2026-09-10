@@ -7,10 +7,6 @@ const RATE_LIMIT_SECONDS = 30;
 
 function rate_limit(): bool {
     $ip = $_SERVER['REMOTE_ADDR'];
-    // it's always cloudflare
-    if (!empty($_SERVER['HTTP_CF_CONNECTING_IP'])) {
-        $ip = $_SERVER['HTTP_CF_CONNECTING_IP'];
-    }
 
     if (!filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4 | FILTER_FLAG_IPV6)) {
         return false;
@@ -62,14 +58,7 @@ header("Content-Type: application/json");
 $method = $_SERVER["REQUEST_METHOD"];
 $path = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 
-if ($method === "POST" && $path === "/guestbook") {
-    if (!rate_limit()) {
-        http_response_code(429);
-        header("Retry-After: " . strval(RATE_LIMIT_SECONDS));
-        echo json_encode(["error" => "too many requests"]);
-        exit;
-    }
-    
+if ($method === "POST" && $path === "/") {
     $raw = file_get_contents("php://input");
 
     $message = json_decode($raw, true);
@@ -90,6 +79,13 @@ if ($method === "POST" && $path === "/guestbook") {
         exit;
     }
 
+    if (!rate_limit()) {
+        http_response_code(429);
+        header("Retry-After: " . strval(RATE_LIMIT_SECONDS));
+        echo json_encode(["error" => "too many requests"]);
+        exit;
+    }
+
     file_put_contents(
         GUESTBOOK_FILE,
         json_encode(
@@ -103,7 +99,7 @@ if ($method === "POST" && $path === "/guestbook") {
     exit;
 }
 
-if ($method === "GET" && $path === "/guestbook") {
+if ($method === "GET" && $path === "/") {
     $messages = [];
 
     if (file_exists(GUESTBOOK_FILE)) {
