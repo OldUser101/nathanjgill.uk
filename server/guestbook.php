@@ -91,7 +91,7 @@ if ($method === "POST" && $path === "/") {
     file_put_contents(
         GUESTBOOK_FILE,
         json_encode(
-            ["name" => $message["name"], "message" => $message["message"]],
+            ["name" => $message["name"], "message" => $message["message"], "ts" => time()],
                 JSON_UNESCAPED_UNICODE
         ) . "\n",
         FILE_APPEND | LOCK_EX
