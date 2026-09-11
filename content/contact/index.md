@@ -30,29 +30,15 @@ gradient avatar too, which is the favicon for this page, and shown below.
 # Git
 
 It might be worth moving this to a separate page in the future. All of my
-projects are hosted in as subset of 3 forges, some are mirrored:
+projects are hosted in a subset of 3 forges, some are mirrored:
 
 - [Personal server](https://git.ngill.net)
 - [GitHub](https://github.com/OldUser101)
 - [Tangled](https://tangled.org/ngill.net)
 
-Each project has a canonical repository and may be mirrored to one or more
-other forges. Contributions should be sent to the canonical repository;
-mirrors are read-only. If a project's canonical repository is hosted on my
-personal server and you'd like to contribute, e-mail me.
-
-|Project|Personal server|GitHub|Tangled|
-|-|-|-|-|
-|[nlock](https://github.com/OldUser101/nlock)|✓|✓ (canonical)|✓|
-|[tars](https://git.ngill.net/tars.git)|✓ (canonical)|✓|✓|
-|[lic](https://git.ngill.net/lic.git)|✓ (canonical)|✓|✓|
-|[dotfiles](https://git.ngill.net/dotfiles.git)|✓ (canonical)|✓|✓|
-|[onyx](https://git.ngill.net/onyx.git)|✓ (canonical)|✓|✓|
-|[nls](https://git.ngill.net/nls.git)|✓ (canonical)|✓|✓|
-|[personal-site](https://git.ngill.net/personal-site.git)|✓ (canonical)|✓|✗|
-|[aqasm-sim](https://git.ngill.net/aqasm-sim.git)|✓ (canonical)|✓|✗|
-|[mastermind](https://git.ngill.net/mastermind.git)|✓ (canonical)|✓|✗|
-|..others|✓ (canonical)|✗|✗|
+As a general rule, my personal server is the canonical repository for all
+my projects, this is read-only to the public. Contributions should either
+be sent to a mirror or sent to me in another appropriate format.
 
 There is a [GitHub organisation](https://github.com/tetra-linux) for Tetra
 Linux, though it's massively out-of-date. Development is currently on my
