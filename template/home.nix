@@ -25,6 +25,10 @@ let
         </a>
 
         <div id="badges">
+          <a class="badge" href="https://unixcore.sh">
+            <img src="/static/gifs/unixcore.gif">
+          </a>
+
           <a class="badge" href="https://jj-vcs.dev">
             <img src="/static/gifs/built_with_jj.gif">
           </a>
