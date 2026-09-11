@@ -5,6 +5,7 @@ cfg:
   summary ? null,
   content ? "",
   head ? "",
+  footer ? "",
 }:
 let
   summary' =
@@ -50,7 +51,7 @@ in
 lib.buildPage {
   name = "page";
   text = lib.buildTemplateText (import ./base.nix) {
-    inherit page;
+    inherit page footer;
     head = head';
   };
 }

@@ -2,6 +2,7 @@
   lib,
   head ? "",
   page ? "",
+  footer ? "",
 }:
 lib.buildPage {
   name = "base";
@@ -26,5 +27,6 @@ lib.buildPage {
         ${page}
       </body>
     </html>
+    ${footer}
   '';
 }

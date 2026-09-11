@@ -8,7 +8,7 @@ let
       <img src="/static/avatar.jpg" width="250" height="250" alt="My Profile Picture">
 
       <h1 style="font-size: 1.84rem; margin: 0;">Nathan Gill</h1>
-      <h2 style="margin-top: 0;">OldUser101</h2>
+      <h2 style="margin-top: 0; user-select: none;" id="uname" title="..in posix extended regex: _*[Oo]ld[Uu]ser(101)?">OldUser101</h2>
 
       <div style="padding-top: 1.5em; padding-bottom: 1.5em;">
         <p style="margin-bottom: 0;">
@@ -52,10 +52,44 @@ let
       </div>
     </div>
   '';
+
+  footer = ''
+    <script>
+      const USERNAMES = [
+        "OldUser101",
+        "___olduser101",
+        "olduser",
+        "olduser101",
+        "___OldUser101",
+      ];
+      var CURRENT_USERNAME = 0;
+    
+      function updateUsername() {
+        let next = Math.floor(Math.random() * USERNAMES.length);
+        if (next == CURRENT_USERNAME) {
+          next = (next + 1) % USERNAMES.length;
+        }
+        
+        const userElem = document.getElementById("uname");
+        userElem.innerText = USERNAMES[next];
+
+        CURRENT_USERNAME = next;
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        updateUsername();
+
+        const userElem = document.getElementById("uname");
+        userElem.addEventListener("click", () => {
+          updateUsername();
+        })
+      })
+    </script>
+  '';
 in
 lib.buildPage {
   name = "home";
   text = lib.buildTemplateText (import ./page.nix cfg) {
-    inherit content;
+    inherit content footer;
   };
 }
