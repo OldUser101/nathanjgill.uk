@@ -25,8 +25,8 @@ lib.buildPage {
       </head>
       <body>
         ${page}
+        ${footer}
       </body>
     </html>
-    ${footer}
   '';
 }
