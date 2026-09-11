@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <title>nathan / olduser</title>
+
+    <style>
+      ::-moz-selection {
+        background: #cba6f7;
+        color: #1e1e2e;
+      }
+
+      ::selection {
+        background: #cba6f7;
+        color: #1e1e2e;
+      }
+
+      body {
+        margin: 0;
+        height: 100vh;
+
+        background-image: url("./bars.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        display: grid;
+        place-items: center;
+      }
+
+      #content-wrapper {
+        width: min(100vw, 80ch);
+        height: calc(min(100vw, 80ch) * tan(atan2(100vh, 100vw)));
+        display: grid;
+        place-items: center;
+      }
+
+      #content {
+        width: calc(100% - 2em);
+        height: calc(100% - 2em);
+        box-sizing: border-box;
+
+        font-family: sans-serif;
+
+        background-color: #1e1e2e;
+        color: #cdd6f4;
+        border: 2px solid #cba6f7;
+
+        padding: 1em;
+        overflow-y: auto;
+        overflow-x: auto;
+      }
+
+      #content p {
+        margin: 0;
+      }
+
+      #content h1 {
+        font-weight: 600;
+        font-size: 1.4em;
+        color: #cba6f7;
+        margin: 0 0 1em 0;
+      }
+
+      #content h2,
+      #content h3,
+      #content h4,
+      #content h5,
+      #content h6 {
+        font-weight: 600;
+        font-size: 1.1em;
+        color: #cba6f7;
+        margin: 0 0 0.67em 0;
+      }
+
+      #content hr {
+        border: none;
+        border-top: 2px solid #acadc8;
+        margin: 1em 0;
+      }
+
+      #content a,
+      #content a:link,
+      #content a:visited {
+        text-decoration: underline;
+        color: #cdd6f4;
+        padding-left: 0.5ch;
+        padding-right: 0.5ch;
+      }
+
+      #content a:hover,
+      #content a:active {
+        text-decoration: none;
+        background: #cdd6f4;
+        color: #1e1e2e;
+        cursor: pointer;
+      }
+
+      #badges a.badge,
+      #badges a.badge:hover,
+      #badges a.badge:active,
+      #badges a.badge:visited {
+        display: inline-block;
+        padding: 0;
+        background: none;
+        color: inherit;
+      }
+
+      #badges img.badge,
+      #badges a.badge img {
+        display: block;
+        margin: 0 auto;
+        height: auto;
+        max-width: 100%;
+      }
+
+      #badges img.badge {
+        display: inline-block;
+      }
+
+      .badge {
+        image-rendering: pixelated;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content-wrapper">
+      <div id="content">
+        <h1>nathan / olduser</h1>
+        <p>imagine this said something interesting</p>
+        <hr />
+        <h2>contact</h2>
+        <ul>
+          <li>email: <a href="mailto:n@ngill.net">n@ngill.net</a></li>
+          <li>
+            discord:
+            <a href="https://discord.com/users/1335194133614034979"
+              >___olduser101</a
+            >
+          </li>
+          <li>
+            github: <a href="https://github.com/OldUser101">OldUser101</a>
+          </li>
+        </ul>
+        <hr />
+        <h2>external links</h2>
+        <ul>
+          <li><a href="https://ngill.net">my main site</a></li>
+          <li><a href="https://unixcore.sh/lucy">lucy's unixcore site</a></li>
+        </ul>
+        <hr />
+        <div id="badges">
+          <a class="badge" href="https://ngill.net">
+            <img src="./badge.gif" />
+          </a>
+          <a class="badge" href="https://unixcore.sh">
+            <img src="./unixcore.gif" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
