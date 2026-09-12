@@ -12,7 +12,7 @@ let
 
       <div style="padding-top: 1.5em; padding-bottom: 1.5em;">
         <p style="margin-bottom: 0;">
-          I'm a programmer who: writes code; breaks computers; and does other
+          Agender programmer who: writes code; breaks computers; and does other
           "cool things".
         </p>
         <p style="margin-top: 0;">Take a look for yourself.</p>
@@ -44,6 +44,9 @@ let
       <p style="margin-bottom: 0;"><strong>Other Sites</strong></p>
       <div>
         <a href="https://git.ngill.net">Personal Git Server</a>
+      </div>
+      <div>
+        <a href="https://unixcore.sh/olduser">Unixcore Site</a>
       </div>
       <div>
         <a href="https://asmsim.ngill.net">AQA Assembly Language Simulator</a>
