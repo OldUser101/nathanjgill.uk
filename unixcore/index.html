@@ -33,10 +33,23 @@
       }
 
       #content-wrapper {
-        width: min(100vw, 80ch);
-        height: calc(min(100vw, 80ch) * tan(atan2(100vh, 100vw)));
+        width: 80ch;
+        height: 54ch;
         display: grid;
         place-items: center;
+      }
+
+      @media (max-width: 80ch) {
+        #content-wrapper {
+          width: 100vw;
+          height: 100vh;
+        }
+      }
+
+      @media (max-height: 54ch) {
+        #content-wrapper {
+          height: 100vh;
+        }
       }
 
       #content {
@@ -131,7 +144,10 @@
     <div id="content-wrapper">
       <div id="content">
         <h1>nathan / olduser</h1>
-        <p>imagine this said something interesting</p>
+        <p>agender programmer from hell</p>
+        <hr />
+        <h2>info</h2>
+        <i>what else could you need to know?</i>
         <hr />
         <h2>contact</h2>
         <ul>
@@ -147,7 +163,7 @@
           </li>
         </ul>
         <hr />
-        <h2>external links</h2>
+        <h2>links</h2>
         <ul>
           <li><a href="https://ngill.net">my main site</a></li>
           <li><a href="https://unixcore.sh/lucy">lucy's unixcore site</a></li>
